@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import SimpleMenu from './components/SimpleMenu';
+import SimpleAppBar from './components/SimpleAppBar';
+import Checkboxes from './components/Checkboxes';
+import SimpleSnackBar from './components/SimpleSnackBar';
+import SimpleStepper from './components/SimpleStepper';
+import AlertDialog from './components/AlertDialog';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SimpleAppBar />
+      <SimpleMenu />
+      <Checkboxes />
+      <SimpleSnackBar />
+      <SimpleStepper />
+      <AlertDialog />
     </div>
   );
 }
